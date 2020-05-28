@@ -1,17 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://kit.fontawesome.com/3963957e1d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta charset="UTF-8" />
     <title>My Application</title>
     <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
 
-    <div class="container">
-        <h1>Hello There!</h1>
+<div class="container">
+    <div class="row-6">
+        <h1 class="title text-primary">Movies!</h1>
+        <section id="movies"></section>
+        <section id="movies-form">
+            <form action="" id="add-movie">
+                <label for="title">Movie Title</label>
+                <input id="title" name="title" type="text" placeholder="enter a movie name">
+                <label for="rating">How many <i class="far fa-star"></i>'s would you give it?</label>
+                <select name="rating" id="rating">
+                    <option value="one">1 star</option>
+                    <option value="two">2 stars</option>
+                    <option value="three">3 stars</option>
+                    <option value="four">4 stars</option>
+                    <option value="five">5 stars</option>
+                </select>
+                <button type="button" id="add-movie-btn" class="btn btn-info">Add Movie</button>
+            </form>
+        </section>
         <p>To get started, edit <code>src/index.js</code>.</p>
     </div>
+    <div class="row-6">
+        <p>test</p>
+    </div>
+</div>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="./main.js"></script>
 </body>
 </html>
