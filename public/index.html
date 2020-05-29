@@ -2,22 +2,24 @@
 <html lang="en">
 <head>
     <script src="https://kit.fontawesome.com/3963957e1d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <meta charset="UTF-8" />
-    <title>My Application</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8"/>
+    <title>Movie Application</title>
+    <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
 
 <div class="container">
     <div class="row-6">
-        <h1 class="title text-primary">Movies!</h1>
+        <h1 class="title-head text-primary">Movies!</h1>
         <section id="movies"></section>
         <section id="movies-form">
             <form action="" id="add-movie">
                 <label for="title">Movie Title</label>
                 <input id="title" name="title" type="text" placeholder="enter a movie name">
                 <label for="rating">How many <i class="far fa-star"></i>'s would you give it?</label>
+<!--                Need a hint/tooltip - is 1 star or 5 stars better?-->
                 <select name="rating" id="rating">
                     <option value="one">1 star</option>
                     <option value="two">2 stars</option>
@@ -30,15 +32,54 @@
         </section>
         <p>To get started, edit <code>src/index.js</code>.</p>
     </div>
-    <div class="row-6">
-        <p>test</p>
+    <hr>
+
+    <div class="container container-table d-flex mt-4">
+        <div class="table-wrapper">
+            <div class="container">
+                <div class="row search">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6">
+                        <div class=dataTables_filter">
+                            <label for="movie-search" class="searchInfo">Search:</label>
+                            <input id="movie-search" type="text" class="form-control input-sm">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container scroll table-responsive">
+                <table class="table isSearch" cellspacing="0">
+                    <thead>
+                    <tr class="d-flex">
+                        <th class="col-sm-1">ID</th>
+                        <th class="col-sm-5">TITLE</th>
+                        <th class="col-sm-3">RATING</th>
+                        <th class="col-sm-3">CATEGORY</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+<!--                        Replace table body & contents
+                            <tr><th scope="row">1</th><td>Casablanca</td><td>4</td><td>"category"</td></tr>
+                            <tr><th scope="row">2</th><td>Star Wars: A New Hope</td><td>5</td><td>"category"</td></tr>
+                            <tr><th scope="row">3</th><td>undefined</td><td>undefined</td><td>"category"</td></tr>
+                            etc...
+-->
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+
     </div>
 </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
 <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="./main.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="./main.js"></script>
 </body>
 </html>
