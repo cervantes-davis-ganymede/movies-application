@@ -20,11 +20,11 @@ getMovies().then(movies => {
     let movieList = '<tbody>';
     movies.forEach(({title, rating, id}) => {
         console.log(`id#${id} - ${title} - rating: ${rating}`);
-        movieList += `<tr class="d-flex">
-            <td class="col-sm-1">${id}</td>
-            <td class="col-sm-5">${title}</td>
-            <td class="col-sm-3">${rating}</td>
-            <td class="col-sm-3">"category"</td></tr>`;
+        movieList += `<tr class="d-flex justify-content-center">
+            <td class="col-1">${id}</td>
+            <td class="col-5">${title}</td>
+            <td class="col-3">${rating}</td>
+            <td class="col-3">"category"</td></tr>`;
         // Replace text "category" with ${category} after it's created
     });
     movieList += '</tbody>';

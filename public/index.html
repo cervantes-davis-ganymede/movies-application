@@ -13,20 +13,38 @@
 <div class="container">
     <div class="row-6">
         <h1 class="title-head text-primary">Movies!</h1>
+        <br>
+        <header>Enter a movie to add to the table below</header>
         <section id="movies"></section>
         <section id="movies-form">
             <form action="" id="add-movie">
-                <label for="title">Movie Title</label>
-                <input id="title" name="title" type="text" placeholder="enter a movie name">
-                <label for="rating">How many <i class="far fa-star"></i>'s would you give it?</label>
-<!--                Need a hint/tooltip - is 1 star or 5 stars better?-->
-                <select name="rating" id="rating">
-                    <option value="one">1 star</option>
-                    <option value="two">2 stars</option>
-                    <option value="three">3 stars</option>
-                    <option value="four">4 stars</option>
-                    <option value="five">5 stars</option>
+                <label for="title" class="title"></label>
+                <input class="form-control" id="title" name="title" type="movie-title" placeholder="Enter Movie Title">
+                <br>
+                <label for="genre" class="movie-genre"></label>
+                <select name="genre" id="genre" class="form-control">
+                    <option value="default">Select a Genre</option>
+                    <option value="1">Action</option>
+                    <option value="2">Comedy</option>
+                    <option value="3">Drama</option>
+                    <option value="4">Fantasy</option>
+                    <option value="5">Horror</option>
+                    <option value="6">Mystery</option>
+                    <option value="7">Romance</option>
+                    <option value="8">Thriller</option>
+                    <option value="9">Western</option>
                 </select>
+                <br>
+                <label for="rating">Rate it!</label>
+<!--                Need a hint/tooltip - is 1 star or 5 stars better?-->
+                <select name="rating" id="rating" class="form-control">
+                    <option value="bad">&#11088 Bad movie dont watch.</option>
+                    <option value="eh">&#11088 &#11088 You're not missing anything.</option>
+                    <option value="ok">&#11088 &#11088 &#11088 This movie is ok.</option>
+                    <option value="good">&#11088 &#11088 &#11088 &#11088 Loved it!</option>
+                    <option value="perfect">&#11088 &#11088 &#11088 &#11088 &#11088 Perfect, highly recommended.</option>
+                </select>
+                <br>
                 <button type="button" id="add-movie-btn" class="btn btn-info">Add Movie</button>
             </form>
         </section>
@@ -34,12 +52,12 @@
     </div>
     <hr>
 
-    <div class="container container-table d-flex mt-4">
+    <div class="container-table d-flex mt-1 justify-content-center">
         <div class="table-wrapper">
             <div class="container">
                 <div class="row search">
-                    <div class="col-md-6"></div>
-                    <div class="col-md-6">
+<!--                    <div class="col-md-6"></div>-->
+                    <div class="col-md-12">
                         <div class=dataTables_filter">
                             <label for="movie-search" class="searchInfo">Search:</label>
                             <input id="movie-search" type="text" class="form-control input-sm">
@@ -47,14 +65,15 @@
                     </div>
                 </div>
             </div>
+            <br>
             <div class="container scroll table-responsive">
                 <table class="table isSearch" cellspacing="0">
                     <thead>
                     <tr class="d-flex">
-                        <th class="col-sm-1">ID</th>
-                        <th class="col-sm-5">TITLE</th>
-                        <th class="col-sm-3">RATING</th>
-                        <th class="col-sm-3">CATEGORY</th>
+                        <th class="col-1">ID</th>
+                        <th class="col-5">TITLE</th>
+                        <th class="col-3">RATING</th>
+                        <th class="col-3">CATEGORY</th>
                     </tr>
                     </thead>
                     <tbody>
