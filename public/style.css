@@ -3,8 +3,8 @@ html, body {
 }
 
 .container {
-    position: relative;
-    top: 10%;
+    /*position: relative;*/
+    /*top: 10%;*/
     /*transform: translateY(-100%);*/
     text-align: center;
 }
@@ -13,4 +13,12 @@ html, body {
     position: relative;
     width: 100%;
     text-align: left;
+}
+table {
+    table-layout: fixed;
+}
+td {
+    text-align: left;
+    white-space: normal !important;
+    word-wrap: break-word;
 }
