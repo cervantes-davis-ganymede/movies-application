@@ -12,7 +12,10 @@
 
 <div class="container">
     <div class="row-6">
+        <!--added jumbotron to h1-->
+        <!--        <div class="jumbotron">-->
         <h1 class="title-head text-primary">Movies!</h1>
+        <!--        </div>-->
         <br>
         <header>Enter a movie to add to the table below</header>
         <section id="movies"></section>
@@ -23,20 +26,23 @@
                 <br>
                 <label for="genre" class="movie-genre"></label>
                 <select name="genre" id="genre" class="form-control">
+                    <!--                    changed value from numbers to genre to display on table-->
                     <option value="default">Select a Genre</option>
-                    <option value="1">Action</option>
-                    <option value="2">Comedy</option>
-                    <option value="3">Drama</option>
-                    <option value="4">Fantasy</option>
-                    <option value="5">Horror</option>
-                    <option value="6">Mystery</option>
-                    <option value="7">Romance</option>
-                    <option value="8">Thriller</option>
-                    <option value="9">Western</option>
+                    <option value="Action">Action</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Horror">Horror</option>
+                    <option value="Mystery">Mystery</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="Western">Western</option>
                 </select>
                 <br>
                 <label for="rating">Rate it!</label>
                 <select name="rating" id="rating" class="form-control">
+                    <!--                    added default value for dop down rating-->
+                    <option value="default">Select a Rating</option>
                     <option value="1">&#11088 Bad movie, dont watch.</option>
                     <option value="2">&#11088 &#11088 You're not missing anything.</option>
                     <option value="3">&#11088 &#11088 &#11088 This movie is ok.</option>
@@ -45,13 +51,14 @@
                     </option>
                 </select>
                 <br>
-                <button type="button" id="add-movie-btn" class="btn btn-info">Add Movie</button>
+                <button type="button" id="add-movie-btn" class="btn btn-primary">Add Movie</button>
             </form>
         </section>
     </div>
     <hr>
-<!--Movies Display-->
-    <div class="container-table d-flex m-2 p-0">
+    <!--Movies Display-->
+    <!--added table-stripe-->
+    <div class="container-table d-flex m-2 p-0 table-striped">
         <div class="table-wrapper">
             <div class="container">
                 <div class="row search">
@@ -69,19 +76,20 @@
                 <table class="table isSearch">
                     <thead>
                     <tr class="d-flex">
-                        <th class="col-1">ID</th>
                         <th class="col-5">TITLE</th>
-                        <th class="col-3">RATING</th>
-                        <th class="col-3">GENRE</th>
+                        <th class="col-2">RATING</th>
+                        <th class="col-2">GENRE</th>
+                        <th class="col"></th>
+                        <th class="col"></th>
                     </tr>
                     </thead>
-                    <tbody>
-    <!--                        Replace table body & contents
-                        <tr><th scope="row">1</th><td>Casablanca</td><td>4</td><td>"category"</td></tr>
-                        <tr><th scope="row">2</th><td>Star Wars: A New Hope</td><td>5</td><td>"category"</td></tr>
-                        <tr><th scope="row">3</th><td>undefined</td><td>undefined</td><td>"category"</td></tr>
-                        etc...
-    -->
+                    <tbody class="theList">
+                    <!--                        Replace table body & contents
+                                        <tr><th scope="row">1</th><td>Casablanca</td><td>4</td><td>"category"</td></tr>
+                                        <tr><th scope="row">2</th><td>Star Wars: A New Hope</td><td>5</td><td>"category"</td></tr>
+                                        <tr><th scope="row">3</th><td>undefined</td><td>undefined</td><td>"category"</td></tr>
+                                        etc...
+                    -->
                     </tbody>
 
                 </table>

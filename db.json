@@ -17,30 +17,6 @@
       "rating": "4",
       "genre": "4",
       "id": 3
-    },
-    {
-      "title": "The Big Lebowski",
-      "rating": "5",
-      "genre": "2",
-      "id": 4
-    },
-    {
-      "title": "Run Lola Run",
-      "rating": "4",
-      "genre": "1",
-      "id": 5
-    },
-    {
-      "title": "Brazil",
-      "rating": "5",
-      "genre": "3",
-      "id": 6
-    },
-    {
-      "title": "Shaun of the Dead",
-      "rating": "4",
-      "genre": "5",
-      "id": 7
     }
   ]
 }
