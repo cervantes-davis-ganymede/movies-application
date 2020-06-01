@@ -15,13 +15,13 @@ module.exports = {
         };
         return fetch(url, options)
             .then(response => response.json())
-            .catch(console.log('error'))
+            // .catch(console.log('error'))
     },
     editMovie: (movie) => {
-        console.log(movie, "<- the movie object to add");
-        const url = '/api/movies';
+        console.log(movie, "<- the movie object to edit");
+        const url = '/api/movies/' + movie.id;
         const options = {
-            method: 'POST',
+            method: 'PUT',
             headers: {
                 'content-type': 'application/json',
             },
