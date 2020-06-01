@@ -2,21 +2,33 @@
   "movies": [
     {
       "title": "Casablanca",
-      "rating": "4",
-      "genre": "7",
+      "rating": "4 stars",
+      "genre": "Romance",
       "id": 1
     },
     {
       "title": "Star Wars: A New Hope",
-      "rating": "5",
-      "genre": "1",
+      "rating": "5 stars",
+      "genre": "Action",
       "id": 2
     },
     {
-      "title": "Brazil",
-      "rating": "5",
-      "genre": "Fantasy",
+      "title": "The Big Lebowski",
+      "rating": "5 stars",
+      "genre": "Comedy",
       "id": 3
+    },
+    {
+      "title": "The Hobbit",
+      "rating": "3 stars",
+      "genre": "Fantasy",
+      "id": 4
+    },
+    {
+      "title": "Brazil",
+      "rating": "5 stars",
+      "genre": "Fantasy",
+      "id": 5
     }
   ]
 }

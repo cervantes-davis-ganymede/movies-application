@@ -22,3 +22,12 @@ td {
     white-space: normal !important;
     word-wrap: break-word;
 }
+td .edit {
+    display: none;
+}
+td.edit .edit {
+    display: initial;
+}
+td.edit .noedit {
+    display: none;
+}
